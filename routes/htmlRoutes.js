@@ -11,16 +11,4 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
-    app.get("/assets/css/styles.css", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/assets/css/styles.css"));
-    });
-
-    app.get("/assets/js/index.js", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/assets/js/index.js"));
-    });
-
-    app.get("/api/notes", function(req, res) {
-        res.sendFile(path.join(__dirname, "../db/db.json"));
-    });
-
 }
